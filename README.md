@@ -13,6 +13,9 @@
 ### Demo
 [https://mazipan.github.io/vue-pagination-wing/](https://mazipan.github.io/vue-pagination-wing/)
 
+### Screenshoot
+![Screenshoot](https://raw.githubusercontent.com/mazipan/vue-pagination-wing/master/screenshoot.png)
+
 ### Installation
 #### Yarn
 `yarn add vue-pagination-wing`
