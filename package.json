@@ -1,0 +1,79 @@
+{
+  "name": "vue-pagination-wing",
+  "description": "Vue.js pagination with customize wing settings",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "Irfan Maulana (https://github.com/mazipan/)",
+  "private": false,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --hot --color --open",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
+    "pack": "cross-env NODE_ENV=production webpack --progress --hide-modules --config webpack.config.dist.js",
+    "lint": "./node_modules/.bin/eslint --ext .js,.vue src test/*.js",
+    "test": "./node_modules/.bin/jest --coverage",
+    "dist": "npm run build && npm run pack"
+  },
+  "main": "dist/vue-pagination-wing.js",
+  "files": [
+    "dist/vue-pagination-wing.js",
+    "dist/vue-pagination-wing.js.gz",
+    "dist/vue-pagination-wing.js.map"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mazipan/vue-pagination-wing.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mazipan/vue-pagination-wing/issues"
+  },
+  "keywords": [
+    "vue pagination",
+    "vue paging",
+    "vuejs pagination",
+    "vuejs paging"
+  ],
+  "dependencies": {
+    "vue": "^2.5.11"
+  },
+  "devDependencies": {
+    "avoriaz": "^6.3.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "cross-env": "^5.1.1",
+    "css-loader": "^0.28.7",
+    "compression-webpack-plugin": "^1.1.2",
+    "eslint": "^4.13.1",
+    "eslint-plugin-vue": "3.13.0",
+    "file-loader": "^1.1.6",
+    "jest": "^21.2.1",
+    "jest-vue-preprocessor": "^1.3.1",
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.6",
+    "vue-loader": "^13.6.0",
+    "vue-template-compiler": "^2.5.11",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.9.7"
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint:recommended",
+      "plugin:vue/recommended"
+    ]
+  },
+  "jest": {
+    "coverageDirectory": "test/coverage",
+    "moduleNameMapper": {
+      "^vue$": "vue/dist/vue.common.js",
+      "src/([^\\.]*)$": "<rootDir>/src/$1.vue"
+    },
+    "moduleFileExtensions": [
+      "js",
+      "vue"
+    ],
+    "transform": {
+      "^.+\\.js$": "<rootDir>/node_modules/babel-jest",
+      ".*\\.(vue)$": "<rootDir>/node_modules/jest-vue-preprocessor"
+    }
+  }
+}

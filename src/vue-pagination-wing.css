@@ -1,0 +1,35 @@
+.pager {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+}
+.pager__page {
+  text-decoration: none;
+  position: relative;
+  float: left;
+  padding: 8px 15px;
+  margin-left: -5px;
+
+  background-color: #fff;
+  color: #0096D9;
+  border: 1px solid #CCC;
+  cursor: pointer;
+}
+.pager--active {
+  color: #fff;
+  background-color: #0096D9;
+  border: 1px solid #0096D9;
+}
+
+.is--prev {
+  border-top-left-radius: 0.25em;
+  border-bottom-left-radius: 0.25em;
+}
+.is--next {
+  border-top-right-radius: 0.25em;
+  border-bottom-right-radius: 0.25em;
+}
