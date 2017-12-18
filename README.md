@@ -22,6 +22,63 @@
 
 ### How to use
 
+#### Import Plugins
+
+```javascript
+import VuePaginationWing from 'vue-pagination-wing'
+Vue.use(VuePaginationWing)
+```
+
+#### HTML Template
+
+```html
+<VuePaginationWing 
+  :currentPage="currentPage"
+  :total-page="100"
+  @onChangePage="onChangePage">
+</VuePaginationWing>
+```
+
+#### Avaibale Events and Props
+
+##### Events
+
++ `onChangePage` : Event when user click page
+
+  Parameter : `page` (Number: page that user clicked)
+
+##### Props
+
++ `currentPage` : Current page active
+
+  Type : `Number`
+
+  Default : 1
+
++ `totalPage` : Total of page available
+
+  Type : `Number`
+
+  Default : 1
+  
++ `wingCount` : Wing of left and right
+
+  Type : `Number`
+
+  Default : 2
+  
++ `nextText` : Text for next button
+
+  Type : `String`
+
+  Default : 'Next'
+  
++ `prevText` : Text for previous action
+
+  Type : `String`
+
+  Default : 'Prev'
+
 **Hope will usefull for you all.**
 
 Contact Me :
