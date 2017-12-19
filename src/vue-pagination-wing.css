@@ -12,11 +12,11 @@
   position: relative;
   float: left;
   padding: 8px 15px;
-  margin-left: -5px;
 
   background-color: #fff;
   color: #0096D9;
   border: 1px solid #CCC;
+  border-right: 0;
   cursor: pointer;
 }
 .pager--active {
@@ -24,18 +24,18 @@
   background-color: #0096D9;
   border: 1px solid #0096D9;
 }
-
-.is--prev {
+.pager--prev {
   border-top-left-radius: 0.25em;
   border-bottom-left-radius: 0.25em;
 }
-.is--next {
+.pager--next {
   border-top-right-radius: 0.25em;
   border-bottom-right-radius: 0.25em;
+  border-right: 1px solid #CCC;
 }
-.is--disabled {
-  background-color: #999;
-  border: 1px solid #000;
-  color: #000;
+.pager--disabled {
+  background-color: #CCC;
+  border: 1px solid #CCC;
+  color: #fff;
   cursor: not-allowed;
 }

@@ -23,6 +23,10 @@ export default {
     prevText: {
       type: String,
       default: 'Prev'
+    },
+    customClass: {
+      type: String,
+      default: 'pager'
     }
   },
   data () {
@@ -53,12 +57,24 @@ export default {
     },
     isLastPage: function () {
       return this.currentPage === this.totalPage
+    },
+    pageClass: function () {
+      return `${this.customClass}__page`
+    },
+    activeClass: function () {
+      return `${this.pageClass} ${this.customClass}--active`
+    },
+    prevClass: function () {
+      return this.isFirstPage ? `${this.pageClass} ${this.customClass}--prev ${this.customClass}--disabled` : `${this.pageClass} ${this.customClass}--prev`
+    },
+    nextClass: function () {
+      return this.isLastPage ? `${this.pageClass} ${this.customClass}--next ${this.customClass}--disabled` : `${this.pageClass} ${this.customClass}--next`
     }
   },
   methods: {
     onChangePage: function (page) {
       // do not emit when not valid page
-      if (page > 0 && page < this.totalPage) {
+      if (page > 0 && page <= this.totalPage) {
         this.$emit('onChangePage', page)
       }
     },
