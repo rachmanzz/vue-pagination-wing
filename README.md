@@ -4,9 +4,13 @@
 [![Github Issue](https://img.shields.io/github/issues/mazipan/vue-pagination-wing.svg?maxAge=3600)](https://github.com/mazipan/vue-pagination-wing/issues) 
 [![GitHub Fork](https://img.shields.io/github/forks/mazipan/vue-pagination-wing.svg?maxAge=3600)](https://github.com/mazipan/vue-pagination-wing/network/member) 
 [![GitHub Star](https://img.shields.io/github/stars/mazipan/vue-pagination-wing.svg?maxAge=3600)](https://github.com/mazipan/vue-pagination-wing/stargazers) 
+
 [![version](https://img.shields.io/npm/v/vue-pagination-wing.svg)](https://www.npmjs.com/package/vue-pagination-wing)
 [![downloads monthly](https://img.shields.io/npm/dm/vue-pagination-wing.svg)](https://www.npmjs.com/package/vue-pagination-wing) 
 [![downloads](https://img.shields.io/npm/dt/vue-pagination-wing.svg)](https://www.npmjs.com/package/vue-pagination-wing) 
+
+[![Travis](https://img.shields.io/travis/mazipan/vue-pagination-wing.svg)](https://travis-ci.org/mazipan/vue-pagination-wing)
+[![codecov](https://codecov.io/gh/mazipan/vue-pagination-wing/branch/master/graph/badge.svg)](https://codecov.io/gh/mazipan/vue-pagination-wing)
 
 :angel: Vue.js pagination with customize wing settings
 
@@ -81,6 +85,12 @@ Vue.use(VuePaginationWing)
   Type : `String`
 
   Default : 'Prev'
+
++ `customClass` : Class for pagination element
+
+  Type : `String`
+
+  Default : 'pager'
 
 **Hope will usefull for you all.**
 
