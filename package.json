@@ -1,7 +1,7 @@
 {
   "name": "vue-pagination-wing",
   "description": "Vue.js pagination with customize wing settings",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "license": "MIT",
   "author": "Irfan Maulana (https://github.com/mazipan/)",
   "private": false,
