@@ -57,7 +57,10 @@ export default {
   },
   methods: {
     onChangePage: function (page) {
-      this.$emit('onChangePage', page)
+      // do not emit when not valid page
+      if (page > 0 && page < this.totalPage) {
+        this.$emit('onChangePage', page)
+      }
     },
     getWings: function (wingPosition, currentPage, totalPage) {
       let numberOfWing = this.wingCount

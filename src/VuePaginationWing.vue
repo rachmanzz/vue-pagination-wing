@@ -1,7 +1,7 @@
 <template>
     <ul class="pager"> 
       <li> 
-        <a class="pager__page is--prev" @click="onChangePage(currentPage-1)" v-if="!isFirstPage">{{ prevText }}</a> 
+        <a class="pager__page is--prev" @click="onChangePage(currentPage-1)" :class="{'is--disabled': !isFirstPage}">{{ prevText }}</a> 
       </li> 
 
       <li v-if="visibleFirstPage">
@@ -33,7 +33,7 @@
       </li>
 
       <li> 
-        <a class="pager__page is--next" @click="onChangePage(currentPage+1)" v-if="!isLastPage">{{ nextText }}</a> 
+        <a class="pager__page is--next" @click="onChangePage(currentPage+1)" :class="{'is--disabled': !isLastPage}">{{ nextText }}</a> 
       </li> 
   </ul>
 </template>
