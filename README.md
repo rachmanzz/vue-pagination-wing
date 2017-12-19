@@ -82,6 +82,12 @@ Vue.use(VuePaginationWing)
 
   Default : 'Prev'
 
++ `customClass` : Class for pagination element
+
+  Type : `String`
+
+  Default : 'pager'
+
 **Hope will usefull for you all.**
 
 Contact Me :
