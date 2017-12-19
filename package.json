@@ -51,7 +51,7 @@
     "sass-loader": "^6.0.6",
     "vue-loader": "^13.6.0",
     "vue-template-compiler": "^2.5.11",
-    "vue-test-utils": "^1.0.0-beta.6",
+    "vue-test-utils": "^1.0.0-beta.8",
     "webpack": "^3.10.0",
     "webpack-dev-server": "^2.9.7"
   },
@@ -63,9 +63,10 @@
   },
   "jest": {
     "coverageDirectory": "test/coverage",
+    "mapCoverage": true,
     "moduleNameMapper": {
       "^vue$": "vue/dist/vue.common.js",
-      "src/([^\\.]*)$": "<rootDir>/src/$1.vue"
+      "src/([^\\.]*)$": "<rootDir>/src/$1"
     },
     "moduleFileExtensions": [
       "js",
