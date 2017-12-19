@@ -1,5 +1,4 @@
 /* eslint-env jest */
-import Vue from 'vue'
 import { mount, shallow } from 'vue-test-utils'
 import VuePaginationWing from '../src/VuePaginationWing.vue'
 

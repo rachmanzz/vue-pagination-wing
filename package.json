@@ -11,7 +11,7 @@
     "pack": "cross-env NODE_ENV=production webpack --progress --hide-modules --config webpack.config.dist.js",
     "lint": "./node_modules/.bin/eslint --ext .js,.vue src test/*.js",
     "test": "./node_modules/.bin/jest --coverage",
-    "dist": "npm run build && npm run pack"
+    "dist": "npm run lint && npm run build && npm run pack"
   },
   "main": "dist/vue-pagination-wing.js",
   "files": [
